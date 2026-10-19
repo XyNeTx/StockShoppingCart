@@ -1,0 +1,78 @@
+# ===========================================
+# Root .gitignore — StockShoppingCart
+# (stock-shopping-web has its own .gitignore for Next.js)
+# ===========================================
+
+# ---------- .NET / ASP.NET Core (StockShoppingAPI) ----------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+publish/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+
+# Test results / coverage
+[Tt]est[Rr]esult*/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# User secrets / local overrides
+appsettings.*.local.json
+appsettings.Local.json
+*.pfx
+*.pem
+secrets.json
+
+# ---------- Visual Studio / Rider / VS Code ----------
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+.idea/
+*.DotSettings.user
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ---------- Node / Next.js (fallback) ----------
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ---------- Environment files ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Claude Code ----------
+.claude/settings.local.json
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
